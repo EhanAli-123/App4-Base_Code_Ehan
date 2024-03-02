@@ -38,7 +38,36 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	//YOUR JAVASCRIPT GOES HERE
+	var heart_count = 0;
+        var healthy_count = 0;
+       
+ <!-- My variables to count user inputs on whether the presenting symptoms line up for risk of heart disease or if the patient is healthy and pursuing good habits --> 
+
+        function heartAdd(){
+            allergy_count = allergy_count + 1; 
+	<!-- If this function is called, 1 point will be added to the heart variable -->	
+
+        }
+
+        function healthyAdd(){
+            cold_count = cold_count + 1;
+        <!-- If this function is called, 1 point will be added to the healthy variable -->
+        }
+
+	function showResults(){
+        var aPercent = Math.round((heart_count/6) * 100)  
+<!-- Calculates heart count and divides by questions and rounds to the nearest percent for simplicity -->
+
+	var bPercent = Math.round((healthy_count/6) * 100) 
+ <!-- Calculates healthy count and divides by questions and rounds to the nearest percent for simplicity -->
+
+        var resultText = document.getElementById("userResults")
+ <!-- Instantiates a variable that stores userResults which is created with the next line -->
+
+        resultText.innerHTML = "Probability user/patient is at risk for heart disease is = " + aPercent + "%" + "<br> Probability user/patient is healthy is = " + bPercent + "%" 
+<!-- Stores percentages into html text to display upon user click -->
+
+	}
 
 </script>	
 
