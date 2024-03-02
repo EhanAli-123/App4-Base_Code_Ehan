@@ -97,8 +97,34 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+	<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Heart Disease or Healthy?</h1>
+</div>
+	
+<div id="content" class="w3-container">
+	<p>Are you feeling like you might be at risk for heart disease as you age or are your habits habits? Answer a few short questions to find out!</p>
+	<!-- Header content and intro-->
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	
+<!-- My first question with the template provided for page and text-->
+<!-- This question if yes indicates towards heart disease -->	
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1> 
+	</div>
+	
+    	<div id="content" class="w3-container"> 
+         <p>Are is blood pressure around or higher than 140/90?</p>  <!-- This question if yes indicates towards heart disease -->
+	 <a href="#two" onclick="heartAdd();" class="w3-btn w3-grey w3-round"> Yes</a> <!-- Adds +1 to heart count if yes -->
+	 <a href="#two" onclick="healthyAdd();" class="w3-btn w3-grey w3-round"> No</a> <!-- Adds +1 to healthy count if no -->
+    	</div>
+</div>
+<!-- html div notes to close the page -->
+
 	
 </body>
 </html>
